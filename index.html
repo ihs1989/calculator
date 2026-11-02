@@ -229,7 +229,7 @@ function $(id){return document.getElementById(id);}
 var cur=null,g={},cells=[];
 CL.forEach(function(c){
   var b=document.createElement("button");b.type="button";b.className="class has-stk";
-  b.innerHTML='<i class="stk" aria-hidden="true">'+({ict:"💻",science:"🔬",arts:"📖",business:"💼",tourism:"🌴",industrial:"🔧",general:"📚"})[c.id]+"</i><b>"+c.name+"</b><span>"+c.n+" subjects, "+c.hrs+" credit hours</span>";
+  b.innerHTML='<i class="stk" aria-hidden="true">'+({ict:"💻",science:"🔬",arts:"📖",business:"💼",tourism:"🌴",industrial:"🔧",general:"🌱"})[c.id]+"</i><b>"+c.name+"</b><span>"+c.n+" subjects, "+c.hrs+" credit hours</span>";
   b.addEventListener("click",function(){location.hash=curF+"-"+c.id;});
   $("classes").appendChild(b);
 });
